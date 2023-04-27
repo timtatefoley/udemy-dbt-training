@@ -4,6 +4,7 @@ ord.orderid,
 ord.orderdate,
 ord.shipdate,
 ord.shipmode,
+ord.productid,
 ord.ordersellingprice,
 ord.ordercostprice,
 ord.ordersellingprice - ord.ordercostprice as orderprofit,
@@ -14,7 +15,6 @@ cu.country,
 -- COMMENT:  from raw product
 pr.category,
 pr.productname,
-pr.productid,
 pr.subcategory
 from {{ ref('raw_orders') }} as ord
 left join {{ ref('raw_customer') }} as cu
