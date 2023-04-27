@@ -6,4 +6,4 @@
 
 
 select * 
-from raw.globalmart.ORDERS
+from raw.globalmart.FIXED_ORDERS
