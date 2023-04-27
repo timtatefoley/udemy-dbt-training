@@ -9,6 +9,7 @@ ord.ordersellingprice,
 ord.ordercostprice,
 ord.ordersellingprice - ord.ordercostprice as orderprofit,
 -- COMMENT:  from raw customer
+cu.customerid,
 cu.customername,
 cu.segment,
 cu.country,
